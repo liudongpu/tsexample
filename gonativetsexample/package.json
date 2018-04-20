@@ -1,0 +1,27 @@
+{
+  "name": "gonativetsexample",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest"
+  },
+  "dependencies": {
+    "react": "16.3.1",
+    "react-native": "0.55.3",
+    "react-navigation": "1.0.0-beta.22",
+    "react-native-qrcode": "0.2.6",
+    "react-native-elements": "0.18.5",
+    "antd-mobile": "2.1.6",
+    "babel-plugin-import": "1.6.3"
+  },
+  "devDependencies": {
+    "babel-jest": "22.4.3",
+    "babel-preset-react-native": "4.0.0",
+    "jest": "22.4.3",
+    "react-test-renderer": "16.3.1"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}

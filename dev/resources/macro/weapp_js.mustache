@@ -1,0 +1,38 @@
+
+
+
+{{#out.imports}}
+import {{{name}}} from "{{{from}}}";
+{{/out.imports}}
+
+
+Page({
+
+    data:{{{out.state}}},
+
+    onReady: function() {
+        
+
+        wx.setNavigationBarTitle({
+            title: '{{{out.config.pageTitle}}}'
+        });
+    },
+
+    onLoad: function(options) {
+
+        
+  
+            {{{out.init}}}
+  
+        
+    
+    },
+
+    {{#out.methods}}
+
+    bind{{{name}}}:{{{method}}}
+    ,
+
+    {{/out.methods}}
+
+})

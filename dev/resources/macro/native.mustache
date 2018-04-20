@@ -1,0 +1,118 @@
+import React, { Component } from 'react';
+
+
+
+import {
+  TouchableOpacity,
+  StyleSheet,
+  Text,
+  Image,
+  ListView,
+  FlatList,
+  ScrollView,
+  TextInput,
+  Dimensions,
+  RefreshControl,
+  Switch,
+  WebView,
+  View
+} from 'react-native';
+
+
+
+import { MaterialCommunityIcons } from '@expo/vector-icons';
+
+
+import { DatePicker,Picker,SearchBar ,InputItem,List,Button,TextareaItem} from 'antd-mobile';
+
+
+
+import QRCode from 'react-native-qrcode';
+
+
+{{#out.config.styleUrl}}
+import styles from "{{{out.config.styleUrl}}}";
+{{/out.config.styleUrl}}
+
+import styletg from "../../agent/theme/global-style";
+
+import { guidebook} from '../../../scripts/base/index';
+
+
+{{#out.imports}}
+import {{{name}}} from "{{{from}}}";
+{{/out.imports}}
+
+
+
+export default class  extends Component {
+
+
+  static navigationOptions = ({ navigation, screenProps }) => ({
+    title: '{{{out.config.pageTitle}}}',
+
+
+  {{#out.config.headerRight}}
+    headerRight:{{{out.config.headerRight}}},
+
+  {{/out.config.headerRight}}
+
+  {{#out.config.headerLeft}}
+    headerLeft:{{{out.config.headerLeft}}},
+
+  {{/out.config.headerLeft}}
+
+  });
+
+
+  constructor(props) {
+    super(props);
+    
+    this.state = {{{out.state}}};
+  }
+
+  {{#out.init}}
+  componentDidMount() {
+    {{{out.init}}}
+  }
+  {{/out.init}}
+
+
+
+  {{#out.unload}}
+  componentWillUnmount() {
+    {{{out.unload}}}
+  }
+  {{/out.unload}}
+
+
+  {{#out.templates}}
+    x_template_render_{{name}}(item){
+     
+      return (
+      {{{content}}}
+      )
+    }
+  {{/out.templates}}
+
+
+  {{#out.methods}}
+
+    bind{{{name}}}{{{method}}}
+
+    {{/out.methods}}
+
+
+
+  
+
+  render(){
+
+    
+
+    return (
+      {{{out.content}}}
+    )
+  }
+
+};
