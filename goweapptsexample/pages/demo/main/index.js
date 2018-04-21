@@ -5,13 +5,13 @@
 
 Page({
 
-    data:{},
+    data:{"refreshing":false},
 
     onReady: function() {
         
 
         wx.setNavigationBarTitle({
-            title: ''
+            title: '示例页面'
         });
     },
 
