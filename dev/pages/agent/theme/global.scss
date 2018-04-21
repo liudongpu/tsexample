@@ -1,0 +1,73 @@
+@import "../../agent/theme/define";
+
+
+.tg_base_bg{
+    
+    background-color: #ffffff;
+}
+
+
+.tg_nav_occupy{
+    width: 40px;
+    height: 10px;
+}
+
+.tg_empty_box{
+    padding:30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.tg_empty_icon{
+    font-size: 50px;
+    color: #dcdcdc;
+    
+}
+
+.tg_empty_text{
+    padding-top:10px;
+    font-size: 14px;
+    color: #ccc;
+    text-align: center;
+}
+
+.tg_base_text{
+    
+    @include theme_define_simple_text;
+    color: $theme_define_base_text_color;
+}
+
+.tg_color_white{
+    color: #ffffff;
+}
+
+
+.tg_base_icon{
+    font-size: 18px;
+}
+
+
+.tg_button_box{
+    background-color: $theme_define_base_button_color_bg;
+    height: 50px;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.tg_button_text{
+    @include theme_define_simple_text;
+    color: $theme_define_base_button_color_text;
+
+}
+
+
+.tg_flex_full{
+    flex: 1;
+}
+
+
+
+
+
+

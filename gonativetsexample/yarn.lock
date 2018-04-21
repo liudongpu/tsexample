@@ -542,11 +542,11 @@ ansi@^0.3.0, ansi@~0.3.1:
   version "0.3.1"
   resolved "https://registry.yarnpkg.com/ansi/-/ansi-0.3.1.tgz#0c42d4fb17160d5a9af1e484bace1c66922c1b21"
 
-antd-mobile@2.1.6:
-  version "2.1.6"
-  resolved "https://registry.yarnpkg.com/antd-mobile/-/antd-mobile-2.1.6.tgz#dec30762d9c53c054aa6a0e32ec0ebf1c9081673"
+antd-mobile@2.1.8:
+  version "2.1.8"
+  resolved "https://registry.yarnpkg.com/antd-mobile/-/antd-mobile-2.1.8.tgz#054efda2105d9bf603a0730b8602a8fb21c81c02"
   dependencies:
-    array-tree-filter "~2.0.0"
+    array-tree-filter "~2.1.0"
     babel-runtime "6.x"
     classnames "^2.2.1"
     normalize.css "^7.0.0"
@@ -561,7 +561,7 @@ antd-mobile@2.1.6:
     react-native-menu "^0.23.0"
     rmc-calendar "^1.0.0"
     rmc-cascader "~5.0.0"
-    rmc-date-picker "~6.0.0"
+    rmc-date-picker "~6.0.6"
     rmc-dialog "^1.0.1"
     rmc-feedback "^1.0.0"
     rmc-input-number "^1.0.0"
@@ -662,9 +662,9 @@ array-tree-filter@1.0.x:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/array-tree-filter/-/array-tree-filter-1.0.1.tgz#0a8ad1eefd38ce88858632f9cc0423d7634e4d5d"
 
-array-tree-filter@~2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/array-tree-filter/-/array-tree-filter-2.0.0.tgz#20fbc2d5a0de83242c0a9eb90894d4bfb7e2a69e"
+array-tree-filter@~2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/array-tree-filter/-/array-tree-filter-2.1.0.tgz#873ac00fec83749f255ac8dd083814b4f6329190"
 
 array-unique@^0.2.1:
   version "0.2.1"
@@ -919,9 +919,9 @@ babel-plugin-external-helpers@^6.22.0:
   dependencies:
     babel-runtime "^6.22.0"
 
-babel-plugin-import@1.6.3:
-  version "1.6.3"
-  resolved "https://registry.yarnpkg.com/babel-plugin-import/-/babel-plugin-import-1.6.3.tgz#f4deeac51ff9f997c9cf38e8d7d7b9142504eaf5"
+babel-plugin-import@1.7.0:
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/babel-plugin-import/-/babel-plugin-import-1.7.0.tgz#7da886c26d46a048bc9ed126890fa7e419a6133d"
   dependencies:
     "@babel/helper-module-imports" "^7.0.0-beta.34"
 
@@ -937,6 +937,16 @@ babel-plugin-istanbul@^4.1.5:
 babel-plugin-jest-hoist@^22.4.3:
   version "22.4.3"
   resolved "https://registry.yarnpkg.com/babel-plugin-jest-hoist/-/babel-plugin-jest-hoist-22.4.3.tgz#7d8bcccadc2667f96a0dcc6afe1891875ee6c14a"
+
+babel-plugin-module-resolver@3.1.1:
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/babel-plugin-module-resolver/-/babel-plugin-module-resolver-3.1.1.tgz#881cf67e3d4b8400d5eaaefc1be44d2dc1fe404f"
+  dependencies:
+    find-babel-config "^1.1.0"
+    glob "^7.1.2"
+    pkg-up "^2.0.0"
+    reselect "^3.0.1"
+    resolve "^1.4.0"
 
 babel-plugin-react-transform@^3.0.0:
   version "3.0.0"
@@ -992,13 +1002,6 @@ babel-plugin-transform-class-properties@^6.18.0, babel-plugin-transform-class-pr
     babel-plugin-syntax-class-properties "^6.8.0"
     babel-runtime "^6.22.0"
     babel-template "^6.24.1"
-
-babel-plugin-transform-define@^1.3.0:
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/babel-plugin-transform-define/-/babel-plugin-transform-define-1.3.0.tgz#94c5f9459c810c738cc7c50cbd44a31829d6f319"
-  dependencies:
-    lodash "4.17.4"
-    traverse "0.6.6"
 
 babel-plugin-transform-es2015-arrow-functions@^6.5.0, babel-plugin-transform-es2015-arrow-functions@^6.8.0:
   version "6.22.0"
@@ -2272,6 +2275,13 @@ finalhandler@1.1.0:
     statuses "~1.3.1"
     unpipe "~1.0.0"
 
+find-babel-config@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/find-babel-config/-/find-babel-config-1.1.0.tgz#acc01043a6749fec34429be6b64f542ebb5d6355"
+  dependencies:
+    json5 "^0.5.1"
+    path-exists "^3.0.0"
+
 find-cache-dir@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/find-cache-dir/-/find-cache-dir-1.0.0.tgz#9288e3e9e3cc3748717d39eade17cf71fc30ee6f"
@@ -2574,7 +2584,7 @@ hoek@4.x.x:
   version "4.2.1"
   resolved "https://registry.yarnpkg.com/hoek/-/hoek-4.2.1.tgz#9634502aa12c445dd5a7c5734b572bb8738aacbb"
 
-hoist-non-react-statics@^2.2.0:
+hoist-non-react-statics@^2.2.0, hoist-non-react-statics@^2.3.1:
   version "2.5.0"
   resolved "https://registry.yarnpkg.com/hoist-non-react-statics/-/hoist-non-react-statics-2.5.0.tgz#d2ca2dfc19c5a91c5a6615ce8e564ef0347e2a40"
 
@@ -3517,15 +3527,11 @@ lodash.times@^4.3.2:
   version "4.3.2"
   resolved "https://registry.yarnpkg.com/lodash.times/-/lodash.times-4.3.2.tgz#3e1f2565c431754d54ab57f2ed1741939285ca1d"
 
-lodash@4.17.4:
-  version "4.17.4"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.4.tgz#78203a4d1c328ae1d86dca6460e369b57f4055ae"
-
 lodash@^3.5.0:
   version "3.10.1"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-3.10.1.tgz#5bf45e8e49ba4189e17d482789dfd15bd140b7b6"
 
-lodash@^4.13.1, lodash@^4.14.0, lodash@^4.17.4, lodash@^4.17.5, lodash@^4.2.0, lodash@^4.3.0, lodash@^4.6.1:
+lodash@^4.0.0, lodash@^4.13.1, lodash@^4.14.0, lodash@^4.17.4, lodash@^4.17.5, lodash@^4.2.0, lodash@^4.3.0, lodash@^4.6.1:
   version "4.17.5"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.5.tgz#99a92d65c0272debe8c96b6057bc8fbfa3bed511"
 
@@ -4245,6 +4251,12 @@ pkg-dir@^2.0.0:
   dependencies:
     find-up "^2.1.0"
 
+pkg-up@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/pkg-up/-/pkg-up-2.0.0.tgz#c819ac728059a461cab1c3889a2be3c49a004d7f"
+  dependencies:
+    find-up "^2.1.0"
+
 plist@2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/plist/-/plist-2.0.1.tgz#0a32ca9481b1c364e92e18dc55c876de9d01da8b"
@@ -4492,6 +4504,10 @@ react-is@^16.3.1:
   version "16.3.2"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.3.2.tgz#f4d3d0e2f5fbb6ac46450641eb2e25bf05d36b22"
 
+react-lifecycles-compat@^1.0.2:
+  version "1.1.4"
+  resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-1.1.4.tgz#fc005c72849b7ed364de20a0f64ff58ebdc2009a"
+
 react-native-camera-roll-picker@^1.2.1:
   version "1.2.3"
   resolved "https://registry.yarnpkg.com/react-native-camera-roll-picker/-/react-native-camera-roll-picker-1.2.3.tgz#b117fd3a2b9012dcccee1261a9bc427226b8d6d2"
@@ -4543,6 +4559,12 @@ react-native-qrcode@0.2.6:
     prop-types "^15.5.10"
     qr.js "0.0.0"
 
+react-native-safe-area-view@^0.7.0:
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/react-native-safe-area-view/-/react-native-safe-area-view-0.7.0.tgz#38f5ab9368d6ef9e5d18ab64212938af3ec39421"
+  dependencies:
+    hoist-non-react-statics "^2.3.1"
+
 react-native-swipeout@^2.2.2:
   version "2.3.3"
   resolved "https://registry.yarnpkg.com/react-native-swipeout/-/react-native-swipeout-2.3.3.tgz#3b99db845ef75f0bfa467f1d8de0b7f7946326bd"
@@ -4551,11 +4573,19 @@ react-native-swipeout@^2.2.2:
     prop-types "^15.5.10"
     react-tween-state "^0.1.5"
 
-react-native-tab-view@^0.0.70:
-  version "0.0.70"
-  resolved "https://registry.yarnpkg.com/react-native-tab-view/-/react-native-tab-view-0.0.70.tgz#1dd2ded32acd0cb6bfef38d26e53675db733b37b"
+"react-native-tab-view@github:react-navigation/react-native-tab-view":
+  version "0.0.74"
+  resolved "https://codeload.github.com/react-navigation/react-native-tab-view/tar.gz/36ebd834d78b841fc19778c966465d02fd1213bb"
   dependencies:
+    prop-types "^15.6.0"
+
+react-native-vector-icons@4.6.0:
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/react-native-vector-icons/-/react-native-vector-icons-4.6.0.tgz#e4014311ffa6de397d914ffc31b7097a874cc8d5"
+  dependencies:
+    lodash "^4.0.0"
     prop-types "^15.5.10"
+    yargs "^8.0.2"
 
 react-native@0.55.3:
   version "0.55.3"
@@ -4621,17 +4651,18 @@ react-native@0.55.3:
     xmldoc "^0.4.0"
     yargs "^9.0.0"
 
-react-navigation@1.0.0-beta.22:
-  version "1.0.0-beta.22"
-  resolved "https://registry.yarnpkg.com/react-navigation/-/react-navigation-1.0.0-beta.22.tgz#be7a7a066f94a37d4eeeff01bacffabdc66c57e7"
+react-navigation@1.5.11:
+  version "1.5.11"
+  resolved "https://registry.yarnpkg.com/react-navigation/-/react-navigation-1.5.11.tgz#fba6ab45d7b9987c1763a5aaac53b4f6d62b7f5c"
   dependencies:
-    babel-plugin-transform-define "^1.3.0"
     clamp "^1.0.1"
     hoist-non-react-statics "^2.2.0"
     path-to-regexp "^1.7.0"
     prop-types "^15.5.10"
+    react-lifecycles-compat "^1.0.2"
     react-native-drawer-layout-polyfill "^1.3.2"
-    react-native-tab-view "^0.0.70"
+    react-native-safe-area-view "^0.7.0"
+    react-native-tab-view "github:react-navigation/react-native-tab-view"
 
 react-proxy@^1.1.7:
   version "1.1.8"
@@ -4875,6 +4906,10 @@ require-main-filename@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/require-main-filename/-/require-main-filename-1.0.1.tgz#97f717b69d48784f5f526a6c5aa8ffdda055a4d1"
 
+reselect@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/reselect/-/reselect-3.0.1.tgz#efdaa98ea7451324d092b2b2163a6a1d7a9a2147"
+
 resolve-cwd@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/resolve-cwd/-/resolve-cwd-2.0.0.tgz#00a9f7387556e27038eae232caa372a6a59b665a"
@@ -4893,7 +4928,7 @@ resolve@1.1.7:
   version "1.1.7"
   resolved "https://registry.yarnpkg.com/resolve/-/resolve-1.1.7.tgz#203114d82ad2c5ed9e8e0411b3932875e889e97b"
 
-resolve@^1.3.2, resolve@^1.5.0:
+resolve@^1.3.2, resolve@^1.4.0, resolve@^1.5.0:
   version "1.7.1"
   resolved "https://registry.yarnpkg.com/resolve/-/resolve-1.7.1.tgz#aadd656374fd298aee895bc026b8297418677fd3"
   dependencies:
@@ -4950,7 +4985,7 @@ rmc-cascader@~5.0.0:
     babel-runtime "6.x"
     rmc-picker "~5.0.0"
 
-rmc-date-picker@~6.0.0, rmc-date-picker@~6.0.0-alpha.10:
+rmc-date-picker@~6.0.0-alpha.10, rmc-date-picker@~6.0.6:
   version "6.0.6"
   resolved "https://registry.yarnpkg.com/rmc-date-picker/-/rmc-date-picker-6.0.6.tgz#b18be72ff86f654fea1050ac8d5899f0d23efe00"
   dependencies:
@@ -5586,10 +5621,6 @@ tr46@^1.0.0:
   dependencies:
     punycode "^2.1.0"
 
-traverse@0.6.6:
-  version "0.6.6"
-  resolved "https://registry.yarnpkg.com/traverse/-/traverse-0.6.6.tgz#cbdf560fd7b9af632502fed40f918c157ea97137"
-
 trim-right@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/trim-right/-/trim-right-1.0.1.tgz#cb2e1203067e0c8de1f614094b9fe45704ea6003"
@@ -5943,6 +5974,24 @@ yargs@^10.0.3:
     which-module "^2.0.0"
     y18n "^3.2.1"
     yargs-parser "^8.1.0"
+
+yargs@^8.0.2:
+  version "8.0.2"
+  resolved "https://registry.yarnpkg.com/yargs/-/yargs-8.0.2.tgz#6299a9055b1cefc969ff7e79c1d918dceb22c360"
+  dependencies:
+    camelcase "^4.1.0"
+    cliui "^3.2.0"
+    decamelize "^1.1.1"
+    get-caller-file "^1.0.1"
+    os-locale "^2.0.0"
+    read-pkg-up "^2.0.0"
+    require-directory "^2.1.1"
+    require-main-filename "^1.0.1"
+    set-blocking "^2.0.0"
+    string-width "^2.0.0"
+    which-module "^2.0.0"
+    y18n "^3.2.1"
+    yargs-parser "^7.0.0"
 
 yargs@^9.0.0:
   version "9.0.1"

@@ -1,0 +1,31 @@
+
+@import '../../agent/theme/define.scss';
+
+
+
+
+
+.theme_layout_nav_title{
+    align-self: center;
+    font-size: 18px;
+   
+}
+
+.theme_layout_nav_header{
+    height: 48px;
+    background-color: $theme_define_base_nav_color_bg;
+    border-bottom-width: 0px;
+    
+    
+    
+}
+
+.theme_layout_nav_back{
+    
+    
+}
+
+.theme_layout_card_main{
+    background-color: #f5f5f9;
+    border-width: 0px;
+}

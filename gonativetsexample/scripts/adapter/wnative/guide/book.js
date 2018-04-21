@@ -1,8 +1,8 @@
 import { AsyncStorage, Alert } from 'react-native';
 import { TCoreCommonFunc, TCoreHelperUrl } from "../../tcore/index";
 import { NavigationActions } from 'react-navigation';
-import { Toast, ActionSheet } from 'antd-mobile';
-import { Constants, KeepAwake } from 'expo';
+import Toast from 'antd-mobile/lib/toast';
+import ActionSheet from 'antd-mobile/lib/action-sheet';
 class Book {
     navigateUrl(that, sPageUrl) {
         let oPageNavTemp = null;
@@ -156,7 +156,7 @@ class Book {
         }
     }
     systemInfo() {
-        return { version: Constants.manifest.version };
+        return { version: '' };
     }
     componentActionSheet(oSet) {
         ActionSheet.showActionSheetWithOptions({
@@ -168,7 +168,7 @@ class Book {
     execSpecific(sSpecificName, oParam) {
         switch (sSpecificName) {
             case "nativekeepalive":
-                KeepAwake.activate();
+                //
                 break;
             default:
                 break;

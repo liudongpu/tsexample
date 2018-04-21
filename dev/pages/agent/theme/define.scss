@@ -1,0 +1,26 @@
+$theme_define_base_nav_color_bg:#1278c6;
+
+
+
+$theme_define_base_button_color_bg:#1278c6;
+
+$theme_define_base_button_color_text:#ffffff;
+
+
+$theme_define_base_text_color:#171717;
+
+
+$theme_define_base_border_color:#f7f7f7;
+
+
+$theme_define_form_border_color:#ebebeb;
+
+
+$theme_define_base_bg_color:#f5f5f9;
+
+
+
+@mixin theme_define_simple_text{
+    font-size: 16px;
+
+}
