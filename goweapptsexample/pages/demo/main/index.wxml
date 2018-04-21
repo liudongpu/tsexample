@@ -1,4 +1,4 @@
-<view><text>aaa</text>
+<view><text>aaa</text><QRCode></QRCode><QRCode></QRCode><QRCode></QRCode>
     </view>
 
 

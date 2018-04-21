@@ -35,6 +35,7 @@ import styletg from "../../agent/theme/global-style";
 import { guidebook} from '../../../scripts/base/index';
 
 
+import QRCode from "react-native-qrcode";
 
 
 
@@ -73,7 +74,7 @@ export default class  extends Component {
     
 
     return (
-      <View><Text>aaa</Text>
+      <View><Text>aaa</Text><QRCode></QRCode><QRCode></QRCode><QRCode></QRCode>
     </View>
     )
   }
