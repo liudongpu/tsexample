@@ -11,7 +11,7 @@ Page({
         
 
         wx.setNavigationBarTitle({
-            title: ''
+            title: 'demopage2'
         });
     },
 

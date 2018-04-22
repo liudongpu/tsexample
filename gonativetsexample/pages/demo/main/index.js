@@ -19,7 +19,7 @@ export default class  extends Component {
 
 
   static navigationOptions = ({ navigation, screenProps }) => ({
-    title: '',
+    title: 'demopage2',
 
 
 
@@ -50,7 +50,7 @@ export default class  extends Component {
     
 
     return (
-      <View><Text>aaabcdcegaaaac</Text>
+      <View><Text>aaabcdcegaaaacddgg</Text>
         
     </View>
     )
