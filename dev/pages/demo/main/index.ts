@@ -1,9 +1,10 @@
+import { IFrameCite } from "../../../scripts/base/frame";
+
+(): IFrameCite => {
+    return {
+        config: { pageTitle: "demopage2" }
+    }
+}
 
 
-
-({
-    config:{"pageTitle":"示例页面"},
-    state: {"refreshing":false},
-    init:""
-})
 

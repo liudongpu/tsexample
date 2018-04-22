@@ -19,7 +19,7 @@ export default class  extends Component {
 
 
   static navigationOptions = ({ navigation, screenProps }) => ({
-    title: '示例页面',
+    title: '',
 
 
 
@@ -30,7 +30,7 @@ export default class  extends Component {
   constructor(props) {
     super(props);
     
-    this.state = {"refreshing":false};
+    this.state = {};
   }
 
 
@@ -50,7 +50,7 @@ export default class  extends Component {
     
 
     return (
-      <View><Text>aaa</Text>
+      <View><Text>aaabcdcegaaaac</Text>
         
     </View>
     )
