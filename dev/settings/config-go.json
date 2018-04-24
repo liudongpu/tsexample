@@ -3,6 +3,6 @@
   "projectVersionName": "1.0.1",
   "projectVersionCode": 1,
   "projectEnableNative": true,
-  "projectEnableVue": true,
+  "projectEnableSite": true,
   "projectEnableWeapp": true
 }
