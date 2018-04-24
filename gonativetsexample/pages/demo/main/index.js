@@ -50,7 +50,7 @@ export default class  extends Component {
     
 
     return (
-      <View><Text>aaabcdcegaaaacddgg</Text>
+      <View><Text>aaabcdcegaaaacddgghhaa</Text>
         
     </View>
     )

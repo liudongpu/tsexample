@@ -118,24 +118,6 @@ class Book {
                 }
             } });
     }
-    componentToast(sInfo, iSecond, sType) {
-        if (iSecond === undefined) {
-            iSecond = 3000;
-        }
-        else {
-            iSecond = iSecond * 1000;
-        }
-        switch (sType) {
-            case "fail":
-                wx.showToast({ title: sInfo, duration: iSecond });
-                break;
-            default:
-                wx.showToast({ title: sInfo, duration: iSecond });
-                break;
-        }
-    }
-    componentActionSheet(oSet) {
-    }
     systemInfo() {
         return { version: '' };
     }

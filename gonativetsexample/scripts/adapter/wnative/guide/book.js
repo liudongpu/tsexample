@@ -1,8 +1,6 @@
 import { AsyncStorage, Alert } from 'react-native';
 import { TCoreCommonFunc, TCoreHelperUrl } from "../../tcore/index";
 import { NavigationActions } from 'react-navigation';
-import Toast from 'antd-mobile/lib/toast';
-import ActionSheet from 'antd-mobile/lib/action-sheet';
 class Book {
     navigateUrl(that, sPageUrl) {
         let oPageNavTemp = null;
@@ -142,28 +140,8 @@ class Book {
             }
         ]);
     }
-    componentToast(sInfo, iSecond, sType) {
-        if (iSecond === undefined) {
-            iSecond = 3;
-        }
-        switch (sType) {
-            case "fail":
-                Toast.fail(sInfo, iSecond);
-                break;
-            default:
-                Toast.info(sInfo, iSecond);
-                break;
-        }
-    }
     systemInfo() {
         return { version: '' };
-    }
-    componentActionSheet(oSet) {
-        ActionSheet.showActionSheetWithOptions({
-            title: oSet.title,
-            cancelButtonIndex: 2,
-            options: oSet.labels
-        }, oSet.success);
     }
     execSpecific(sSpecificName, oParam) {
         switch (sSpecificName) {

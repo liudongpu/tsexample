@@ -42,10 +42,10 @@ export interface IGuideBook {
     componentMessageAlert(sTitle : string, sMessage : string);
 
     componentMessageConfirm(sTitle : string, sMessage : string, fCall : Function);
-    componentToast(sInfo : string, iSecond : number, sType : string);
+    
 
 
-    componentActionSheet(oSet:IGuideActionSheet);
+    
 
     systemInfo() : IGuideSystemInfo;
 
